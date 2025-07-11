@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works - The Class of Everything</title>
+  <meta name="description" content="Learn how The Class of Everything delivers life skills education through in-school sessions, weekend workshops, and upcoming online courses.">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5',
+            secondary: '#10B981',
+            accent: '#F59E0B',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary">The Class of Everything</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+        <a href="subjects.html" class="font-medium hover:text-primary transition-colors">Subjects</a>
+        <a href="how-it-works.html" class="font-medium text-primary transition-colors">How It Works</a>
+        <a href="why-it-matters.html" class="font-medium hover:text-primary transition-colors">Why It Matters</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-600 hover:text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-3 space-y-3 border-t">
+      <a href="index.html" class="block py-2 hover:text-primary transition-colors">Home</a>
+      <a href="subjects.html" class="block py-2 hover:text-primary transition-colors">Subjects</a>
+      <a href="how-it-works.html" class="block py-2 text-primary transition-colors">How It Works</a>
+      <a href="why-it-matters.html" class="block py-2 hover:text-primary transition-colors">Why It Matters</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-teal-100 to-green-100 py-28">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">How It Works</h1>
+      <p class="text-xl max-w-2xl mx-auto text-gray-700 leading-relaxed">
+        Our program is designed to be flexible, engaging, and easy to integrate into student life.
+      </p>
+    </div>
+  </section>
+
+  <!-- Delivery Modes -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Delivery Modes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Mode Card -->
+        <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="bg-primary/10 text-primary p-4 rounded-lg mr-4">
+              <i class="fas fa-school text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">In-School Sessions</h3>
+          </div>
+          <p class="text-gray-700">
+            Conducted directly in schools during curriculum or extracurricular time. Designed to complement academic learning.
+          </p>
+        </div>
+
+        <!-- Mode Card -->
+        <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="bg-primary/10 text-primary p-4 rounded-lg mr-4">
+              <i class="fas fa-users text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Weekend Workshops</h3>
+          </div>
+          <p class="text-gray-700">
+            Fun, interactive weekend sessions for parents and students to learn together — great for after-school enrichment.
+          </p>
+        </div>
+
+        <!-- Mode Card -->
+        <div class="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="bg-primary/10 text-primary p-4 rounded-lg mr-4">
+              <i class="fas fa-laptop text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Online Courses (Coming Soon)</h3>
+          </div>
+          <p class="text-gray-700">
+            Self-paced video lessons with printable worksheets and live Q&A sessions. Accessible anytime, anywhere.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lesson Structure -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">What Each Lesson Includes</h2>
+      <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-sm">
+        <ol class="space-y-8">
+          <li class="flex items-start">
+            <div class="flex-shrink-0 bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+              <span class="font-bold text-xl">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Story</h3>
+              <p class="text-gray-700">Real-life scenarios that help students relate and connect emotionally.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="flex-shrink-0 bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+              <span class="font-bold text-xl">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Group Discussion</h3>
+              <p class="text-gray-700">Guided conversations that encourage expression and critical thinking.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="flex-shrink-0 bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+              <span class="font-bold text-xl">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Activity</h3>
+              <p class="text-gray-700">Hands-on tasks like role plays, games, or creative projects.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="flex-shrink-0 bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+              <span class="font-bold text-xl">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Reflection</h3>
+              <p class="text-gray-700">Thought-provoking questions to apply learning to real life.</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="flex-shrink-0 bg-primary/10 text-primary rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+              <span class="font-bold text-xl">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">Feedback</h3>
+              <p class="text-gray-700">Constructive input from facilitators to support growth and improvement.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold text-white mb-2">The Class of Everything</h2>
+          <p class="text-gray-400">Education Beyond Books</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+          <a href="subjects.html" class="text-gray-400 hover:text-white transition-colors">Subjects</a>
+          <a href="how-it-works.html" class="text-white hover:text-primary transition-colors">How It Works</a>
+          <a href="why-it-matters.html" class="text-gray-400 hover:text-white transition-colors">Why It Matters</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
+        <p class="text-gray-400 mb-4">
+          © 2025 The Class of Everything. All rights reserved.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400">
+          <a href="mailto:sunnydev0411@gmail.com" class="hover:text-white transition-colors">
+            <i class="fas fa-envelope mr-2"></i> sunnydev0411@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/sunny-dev-532681296" target="_blank" class="hover:text-white transition-colors">
+            <i class="fab fa-linkedin mr-2"></i> linkedin.com/in/sunny-dev-532681296
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for mobile menu -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

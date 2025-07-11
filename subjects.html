@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subjects - The Class of Everything</title>
+  <meta name="description" content="Explore life skills taught at The Class of Everything: Financial Literacy, Communication, Emotional Intelligence, Digital Safety, and more.">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5',
+            secondary: '#10B981',
+            accent: '#F59E0B',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary">The Class of Everything</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+        <a href="subjects.html" class="font-medium text-primary transition-colors">Subjects</a>
+        <a href="how-it-works.html" class="font-medium hover:text-primary transition-colors">How It Works</a>
+        <a href="why-it-matters.html" class="font-medium hover:text-primary transition-colors">Why It Matters</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-600 hover:text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-3 space-y-3 border-t">
+      <a href="index.html" class="block py-2 hover:text-primary transition-colors">Home</a>
+      <a href="subjects.html" class="block py-2 text-primary transition-colors">Subjects</a>
+      <a href="how-it-works.html" class="block py-2 hover:text-primary transition-colors">How It Works</a>
+      <a href="why-it-matters.html" class="block py-2 hover:text-primary transition-colors">Why It Matters</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-purple-100 to-pink-100 py-28">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">What We Teach</h1>
+      <p class="text-xl max-w-2xl mx-auto text-gray-700 leading-relaxed">
+        Life skills for Classes 4–8. Designed to be engaging, interactive, and meaningful.
+      </p>
+    </div>
+  </section>
+
+  <!-- Subjects Grid -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Subject Domains</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- 1. Financial Literacy -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-money-bill-wave text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Financial Literacy</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Understanding Money</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Budgeting & Saving</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Banking Basics</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Smart Spending vs Impulse Buying</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Introduction to Investments</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Identifying Scams & Frauds</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2. Communication Skills -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-comments text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Communication Skills</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Active Listening</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Public Speaking</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Storytelling & Expression</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Group Discussion & Debate</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Body Language & Confidence</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3. Critical Thinking -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-brain text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Critical Thinking</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Logical Puzzles</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Problem Solving</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Cause & Effect Thinking</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Decision-Making Skills</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Real-Life Situational Games</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 4. Emotional Intelligence -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-heart text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Emotional Intelligence</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Understanding Emotions</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Self-Awareness Activities</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Empathy Practice</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Managing Stress & Anxiety</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Mindfulness & Focus</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 5. Digital Literacy -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-laptop-code text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Digital Literacy</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Internet Basics</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Online Privacy & Passwords</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Cyberbullying Awareness</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Social Media Safety</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Recognizing Fake News & Online Scams</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 6. Health & First Aid -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-first-aid text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Health & First Aid</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Personal Hygiene & Clean Habits</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Nutrition Basics</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>First Aid for Kids</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Puberty & Body Changes (age-appropriate)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Yoga, Fitness & Stretching</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 7. Civic & Ethical Values -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-balance-scale text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Civic & Ethical Values</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Understanding Indian Constitution</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Rights & Duties of Citizens</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Gender Equality</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Environmental Responsibility</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Ethical Thinking</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 8. Study & Tech Skills -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-book-open text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Study & Tech Skills</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Time Management for Students</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Memory Techniques</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Smart Study Hacks</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Digital Research Skills</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>MS Office (Word, PPT, Excel basics)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 9. DIY & Vocational Skills -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-tools text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">DIY & Vocational Skills</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Basic Home Repairs (bulb, tap, etc.)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Creativity Through Crafts</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Introduction to Design Thinking</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Entrepreneurship for Kids</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Teamwork & Leadership</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 10. Career Exploration -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-briefcase text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Career Exploration</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Job Roles in Different Industries</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Future Careers (AI, Gaming, Climate, etc.)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Goal Setting & Dream Boards</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Interview Prep & Soft Skills</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 11. Experiential Learning -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-hands-helping text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Experiential Learning</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Roleplays & Skits</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Simulations & Real-life Scenarios</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Project-Based Group Activities</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Outdoor Learning Missions</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Game-Based Learning Modules</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 12. Future Fields -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-robot text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">Future Fields</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Introduction to Robotics & AI</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Green Tech & Sustainability</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Space Science Basics</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>Entrepreneurship & Innovation</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 13. How Things Work -->
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+              <i class="fas fa-cogs text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">How Things Work</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>How Banks Work</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>How Elections Work</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>How the Internet Works</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary mr-2 mt-1">•</span>
+              <span>How Trains, Planes, Electricity Systems Work</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Lesson -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Sample Lesson: Online Safety</h2>
+      <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-sm space-y-8">
+        <!-- 1. Warm-Up -->
+        <div class="bg-blue-50/50 p-6 rounded-lg border-l-4 border-blue-500">
+          <div class="flex items-center mb-3">
+            <div class="bg-blue-100 text-blue-600 p-2 rounded-full mr-3">
+              <i class="fas fa-fire text-sm"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">1. Warm-Up (5 min)</h3>
+          </div>
+          <p class="text-gray-700 ml-11">
+            Start with a quick question:<br>
+            <span class="italic">"Have you ever shared your name or photo online?"</span><br>
+            Use a poll or simple hand raise to begin discussion and get students thinking.
+          </p>
+        </div>
+
+        <!-- 2. Video -->
+        <div class="bg-purple-50/50 p-6 rounded-lg border-l-4 border-purple-500">
+          <div class="flex items-center mb-3">
+            <div class="bg-purple-100 text-purple-600 p-2 rounded-full mr-3">
+              <i class="fas fa-film text-sm"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">2. Video (5–7 min)</h3>
+          </div>
+          <p class="text-gray-700 ml-11">
+            Play a short, story-based animated or narrated video:<br>
+            <span class="font-semibold">Title:</span> "Anaya's Online Adventure"<br>
+            A story of a girl who shares personal information online and faces unexpected problems.
+          </p>
+        </div>
+
+        <!-- 3. Discussion -->
+        <div class="bg-green-50/50 p-6 rounded-lg border-l-4 border-green-500">
+          <div class="flex items-center mb-3">
+            <div class="bg-green-100 text-green-600 p-2 rounded-full mr-3">
+              <i class="fas fa-comments text-sm"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">3. Discussion (10 min)</h3>
+          </div>
+          <ul class="list-disc list-inside text-gray-700 ml-11 space-y-2">
+            <li>What went wrong in the story?</li>
+            <li>What should Anaya have done instead?</li>
+          </ul>
+          <p class="text-gray-700 ml-11 mt-3">
+            Then, show two screenshots — one from a real website, one from a fake/scam site — and ask them to spot the difference.
+          </p>
+        </div>
+
+        <!-- 4. Activity -->
+        <div class="bg-yellow-50/50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <div class="flex items-center mb-3">
+            <div class="bg-yellow-100 text-yellow-600 p-2 rounded-full mr-3">
+              <i class="fas fa-brain text-sm"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">4. Activity (15 min)</h3>
+          </div>
+          <p class="text-gray-700 ml-11">
+            Do a group activity or worksheet:
+          </p>
+          <p class="font-semibold text-gray-700 ml-11">
+            Game: "Personal Info or Not?"
+          </p>
+          <p class="text-gray-700 ml-11">
+            Students sort items like:
+          </p>
+          <ul class="list-disc list-inside text-gray-700 ml-16 space-y-1">
+            <li>Name</li>
+            <li>Aadhaar number</li>
+            <li>Phone number</li>
+            <li>Pet's name</li>
+            <li>Favorite color</li>
+          </ul>
+          <p class="text-gray-700 ml-11 mt-3">
+            Then, they create a <span class="font-semibold">Strong Password</span> using a fun, memorable pattern (like combining emojis, initials, and numbers).
+          </p>
+        </div>
+
+        <!-- 5. Quick Quiz -->
+        <div class="bg-red-50/50 p-6 rounded-lg border-l-4 border-red-500">
+          <div class="flex items-center mb-3">
+            <div class="bg-red-100 text-red-600 p-2 rounded-full mr-3">
+              <i class="fas fa-check-circle text-sm"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">5. Quick Quiz (5–7 min)</h3>
+          </div>
+          <p class="text-gray-700 ml-11">
+            Ask 5 multiple choice questions (Google Form or printed):
+          </p>
+          <ul class="list-decimal list-inside text-gray-700 ml-16 space-y-1">
+            <li>What is phishing?</li>
+            <li>What makes a password strong?</li>
+            <li>What information should you never post online?</li>
+            <li>What should you do if you face cyberbullying?</li>
+            <li>Who can you talk to if something feels wrong online?</li>
+          </ul>
+        </div>
+
+        <!-- 6. Closing -->
+        <div class="bg-indigo-50/50 p-6 rounded-lg border-l-4 border-indigo-500">
+          <div class="flex items-center mb-3">
+            <div class="bg-indigo-100 text-indigo-600 p-2 rounded-full mr-3">
+              <i class="fas fa-lightbulb text-sm"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">6. Closing (3 min)</h3>
+          </div>
+          <p class="text-gray-700 ml-11">
+            Ask each student to share:<br>
+            <span class="italic">"One thing I'll do differently online after this class."</span>
+          </p>
+          <p class="text-gray-700 ml-11 mt-3">
+            Hand them a small takeaway card or digital poster titled:<br>
+            <span class="font-semibold">"5 Rules of Online Safety"</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching Method -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Our Teaching Method</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center">
+        <div class="w-full md:w-1/4">
+          <div class="bg-primary/10 text-primary p-6 rounded-full inline-flex items-center justify-center mb-4">
+            <span class="text-3xl font-bold">1</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Story</h3>
+          <p class="text-gray-600">Real-world narratives to spark curiosity</p>
+        </div>
+        <div class="w-full md:w-1/4">
+          <div class="bg-primary/10 text-primary p-6 rounded-full inline-flex items-center justify-center mb-4">
+            <span class="text-3xl font-bold">2</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Discussion</h3>
+          <p class="text-gray-600">Peer-led debates and reflections</p>
+        </div>
+        <div class="w-full md:w-1/4">
+          <div class="bg-primary/10 text-primary p-6 rounded-full inline-flex items-center justify-center mb-4">
+            <span class="text-3xl font-bold">3</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Activity</h3>
+          <p class="text-gray-600">Hands-on games and role-plays</p>
+        </div>
+        <div class="w-full md:w-1/4">
+          <div class="bg-primary/10 text-primary p-6 rounded-full inline-flex items-center justify-center mb-4">
+            <span class="text-3xl font-bold">4</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Reflection</h3>
+          <p class="text-gray-600">Internalizing learning through sharing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold text-white mb-2">The Class of Everything</h2>
+          <p class="text-gray-400">Education Beyond Books</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+          <a href="subjects.html" class="text-white hover:text-primary transition-colors">Subjects</a>
+          <a href="how-it-works.html" class="text-gray-400 hover:text-white transition-colors">How It Works</a>
+          <a href="why-it-matters.html" class="text-gray-400 hover:text-white transition-colors">Why It Matters</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
+        <p class="text-gray-400 mb-4">
+          © 2025 The Class of Everything. All rights reserved.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400">
+          <a href="mailto:sunnydev0411@gmail.com" class="hover:text-white transition-colors">
+            <i class="fas fa-envelope mr-2"></i> sunnydev0411@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/sunny-dev-532681296" target="_blank" class="hover:text-white transition-colors">
+            <i class="fab fa-linkedin mr-2"></i> linkedin.com/in/sunny-dev-532681296
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for mobile menu -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

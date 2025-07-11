@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why It Matters - The Class of Everything</title>
+  <meta name="description" content="Why life skills education matters for young students. Learn how The Class of Everything prepares children for real-life challenges beyond academics.">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4F46E5',
+            secondary: '#10B981',
+            accent: '#F59E0B',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary">The Class of Everything</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="font-medium hover:text-primary transition-colors">Home</a>
+        <a href="subjects.html" class="font-medium hover:text-primary transition-colors">Subjects</a>
+        <a href="how-it-works.html" class="font-medium hover:text-primary transition-colors">How It Works</a>
+        <a href="why-it-matters.html" class="font-medium text-primary transition-colors">Why It Matters</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden focus:outline-none text-gray-600 hover:text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-3 space-y-3 border-t">
+      <a href="index.html" class="block py-2 hover:text-primary transition-colors">Home</a>
+      <a href="subjects.html" class="block py-2 hover:text-primary transition-colors">Subjects</a>
+      <a href="how-it-works.html" class="block py-2 hover:text-primary transition-colors">How It Works</a>
+      <a href="why-it-matters.html" class="block py-2 text-primary transition-colors">Why It Matters</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-red-100 to-pink-100 py-28">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Why Life Skills Matter</h1>
+      <p class="text-xl max-w-2xl mx-auto text-gray-700 leading-relaxed">
+        Children are taught to solve math problems, but not how to manage emotions.<br>
+        They're tested on grammar, but not on how to talk to strangers or handle stress.
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats & Impact -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">The Real-Life Gap</h2>
+      <div class="max-w-4xl mx-auto">
+        <p class="text-lg text-gray-700 mb-10 leading-relaxed">
+          India's education system produces exam toppers who struggle with real life. While schools focus on textbooks, these critical life skills are being missed:
+        </p>
+
+        <div class="space-y-8">
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">1. Financial Literacy</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>76% of Indian teens can't budget pocket money (NCFE 2023)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We teach saving, investing and scam prevention - because money skills shouldn't be a mystery</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">2. Communication Skills</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>56% of graduates lack confidence in speaking (India Skills Report 2024)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We turn shy speakers into storytellers - because your voice matters more than marks</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">3. Critical Thinking</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>Only 12% of Class 8 students can solve logic puzzles (ASER 2023)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We train problem-solvers, not memorizers - because the future belongs to innovators</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">4. Emotional Intelligence</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>42% of teens show anxiety signs (NCERT 2023)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We build coping skills - because mental health is as vital as math</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">5. Digital Safety</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>62% face cyberbullying, 90% stay silent (CyberPeace 2024)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We make the digital world safer - because the internet shouldn't be scary</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">6. Health & First Aid</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>80% schools lack first-aid training (Indian Red Cross 2023)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We teach lifesaving basics - because accidents happen to everyone</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">7. Civic Values</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>60% can't name fundamental rights (CSDS 2023)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We foster responsibility - because good citizens are made, not born</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">8. Study & Tech Skills</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>78% use AI, 52% plagiarize (DU 2024)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We show how to learn smart - because Google has answers, but you need questions</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">9. DIY & Vocational Skills</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>92% parents want kids to learn cooking/repairs (ParentCircle 2024)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We make kids self-reliant - because adulthood shouldn't begin with YouTube tutorials</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">10. Career Exploration</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>74% pick careers under parental pressure (Univariety 2024)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We help discover true passions - because doing what you love beats prestige</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">11. Experiential Learning</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>Kids retain 90% by doing (NEP 2020)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We replace rote learning with hands-on projects - because life isn't multiple choice</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">12. Future Readiness</h3>
+            <p class="text-blue-700 mb-2"><i class="fas fa-chart-bar mr-2"></i>58% schools ignore AI/sustainability (STEM.org 2024)</p>
+            <p class="text-green-700"><i class="fas fa-lightbulb mr-2"></i>We prep for tomorrow's jobs today - because the future won't wait</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emotional Storytelling -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">It's Not Just Education — It's Empowerment</h2>
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-sm">
+        <div class="flex items-start">
+          <div class="flex-shrink-0 mr-4 text-primary">
+            <i class="fas fa-quote-left text-3xl opacity-20"></i>
+          </div>
+          <div>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              A child who can't manage their anger may grow up to be an adult who struggles in relationships.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              A student who doesn't know how to communicate effectively may miss out on opportunities later in life.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              We believe every child deserves to grow up with the skills they need to navigate life — not just exams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="max-w-3xl mx-auto">
+        <blockquote class="text-2xl md:text-3xl italic font-medium text-gray-800 leading-relaxed">
+          <span class="text-primary">"</span><strong>Marks don't teach money.</strong> <strong>Exams don't build confidence.</strong> <strong>Life does.</strong><span class="text-primary">"</span>
+        </blockquote>
+        <p class="mt-6 text-gray-600 font-medium">— Founder, The Class of Everything</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-br from-primary to-purple-600 text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Make a Difference?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+        Whether you're a school, parent, or investor — we invite you to be part of this movement.
+      </p>
+      <a href="mailto:sunnydev0411@gmail.com" class="inline-block bg-white text-primary font-semibold px-8 py-4 rounded-lg shadow hover:bg-gray-100 transition transform hover:-translate-y-1">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold text-white mb-2">The Class of Everything</h2>
+          <p class="text-gray-400">Education Beyond Books</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+          <a href="subjects.html" class="text-gray-400 hover:text-white transition-colors">Subjects</a>
+          <a href="how-it-works.html" class="text-gray-400 hover:text-white transition-colors">How It Works</a>
+          <a href="why-it-matters.html" class="text-white hover:text-primary transition-colors">Why It Matters</a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center md:text-left">
+        <p class="text-gray-400 mb-4">
+          © 2025 The Class of Everything. All rights reserved.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400">
+          <a href="mailto:sunnydev0411@gmail.com" class="hover:text-white transition-colors">
+            <i class="fas fa-envelope mr-2"></i> sunnydev0411@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/sunny-dev-532681296" target="_blank" class="hover:text-white transition-colors">
+            <i class="fab fa-linkedin mr-2"></i> linkedin.com/in/sunny-dev-532681296
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for mobile menu -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
